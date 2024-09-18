@@ -4,6 +4,7 @@ target_sources(TrilogySDK
         CAutomobile.cpp
         CCam.cpp
         CCamera.cpp
+        CClock.cpp
         CColPoint.cpp
         CCopPed.cpp
         CCutsceneObject.cpp
