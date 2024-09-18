@@ -40,6 +40,7 @@ target_sources(TrilogySDK
         CVector2D.cpp
         CVehicle.cpp
         CWeapon.cpp
+        CWeather.cpp
         CWorld.cpp
         ScriptCommands.cpp
 )

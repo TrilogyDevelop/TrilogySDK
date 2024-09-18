@@ -42,6 +42,7 @@ target_sources(TrilogySDK
         CVector2D.h
         CVehicle.h
         CWeapon.h
+        CWeather.h
         CWorld.h
         eCamMode.h
         eCopType.h
