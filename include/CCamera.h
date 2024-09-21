@@ -99,7 +99,7 @@ struct CCamera : public CPlaceable
 	float m_fWideScreenReductionAmount;
 	char field_180[8];
 	CCam m_aCams[3];
-	void* pizda;
+	void* m_pToGarageWeAreIn;
 	void* m_pToGarageWeAreInForHackAvoidFirstPerson;
 	CQueuedMode m_playerMode;
 	CQueuedMode m_playerWeaponMode;
