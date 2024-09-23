@@ -5,7 +5,6 @@
 
 class CPhysical : public CEntity {
 public:
-	CEntity entity;
 	float field_0;
 	unsigned int m_nLastCollisionTime;
 	int m_dwFlags;
