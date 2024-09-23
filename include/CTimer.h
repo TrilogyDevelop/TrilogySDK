@@ -7,4 +7,5 @@ public:
     static unsigned int& m_snTimeInMilliseconds;
 
     static void Update();
+    static unsigned int GetCurrentTimeInCycles();
 };

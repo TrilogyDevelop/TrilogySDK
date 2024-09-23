@@ -5,7 +5,6 @@
 
 class CPhysical : public CEntity {
 public:
-	CEntity entity;
 	float field_0;
 	unsigned int m_nLastCollisionTime;
 	int m_dwFlags;
@@ -25,7 +24,7 @@ public:
 	void* m_pCollisionList;
 	void* m_pMovingList;
 	char m_nNumEntitiesCollided;
-	unsigned __int8 m_nContactSurface;
+	unsigned char m_nContactSurface;
 	char field_EA;
 	CEntity* m_apCollidedEntities[6];
 	float m_fMovingSpeed;
@@ -33,8 +32,8 @@ public:
 	CEntity* m_pDamageEntity;
 	CVector m_vecLastCollisionImpactVelocity;
 	CVector m_vecLastCollisionPosn;
-	unsigned __int16 m_nPieceType;
-	__int16 field_FA;
+	unsigned short m_nPieceType;
+	short field_FA;
 	CPhysical* m_pAttachedTo;
 	CVector m_vecAttachOffset;
 	CVector m_vecAttachedEntityPosn;

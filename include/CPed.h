@@ -154,4 +154,5 @@ public:
 	bool IsAlive();
 	void DettachPedFromEntity();
 	void GiveDelayedWeapon(eWeaponType weaponType, unsigned int ammo, int a3);
+	void RemoveWeaponAnims(int likeUnused, float blendDelta);
 };

@@ -10,4 +10,6 @@ public:
 	short m_wMiscComponentAngle;
 	short field_AE6;
 	char field_AE8[300];
+
+	void UpdateWheelMatrix(int nodeIndex, int flags);
 };

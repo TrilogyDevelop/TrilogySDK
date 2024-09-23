@@ -1,3 +1,11 @@
+/*
+    Plugin-SDK (Grand Theft Auto San Andreas) source file
+    Authors: GTA Community. See more here
+    https://github.com/DK22Pac/plugin-sdk
+    https://github.com/TrilogyDevelop/TrilogySDK
+    Do not delete this comment block. Respect others' work!
+*/
+
 #include "CPed.h"
 #include "memory.hpp"
 
@@ -55,4 +63,8 @@ void CPed::DettachPedFromEntity() {
 
 void CPed::GiveDelayedWeapon(eWeaponType weaponType, unsigned int ammo, int a3) {
 	memory::GtaCall<void>(0x109FB70, this, ammo, a3);
+}
+
+void CPed::RemoveWeaponAnims(int likeUnused, float blendDelta) {
+	memory::GtaCall<void>(0x10A78C0, this, likeUnused, blendDelta);
 }
