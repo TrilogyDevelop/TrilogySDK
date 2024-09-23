@@ -29,20 +29,20 @@ struct tRadarTrace
 	unsigned int m_nColour;
 	unsigned int m_nEntityHandle;
 	CVector m_vecPos;
-	unsigned __int16 m_nCounter;
+	unsigned short m_nCounter;
 	float m_fSphereRadius;
-	unsigned __int16 m_nBlipSize;
+	unsigned short m_nBlipSize;
 	struct CEntryExit* m_pEntryExit;
-	unsigned __int16 m_nRadarSprite;
-	unsigned __int8 m_bBright : 1;
-	unsigned __int8 m_bInUse : 1;
-	unsigned __int8 m_bShortRange : 1;
-	unsigned __int8 m_bFriendly : 1;
-	unsigned __int8 m_bBlipRemain : 1;
-	unsigned __int8 m_bBlipFade : 1;
-	unsigned __int8 m_nCoordBlipAppearance : 2;
-	unsigned __int8 m_nBlipDisplay : 2;
-	unsigned __int8 m_nBlipType : 4;
+	unsigned short m_nRadarSprite;
+	unsigned char m_bBright : 1;
+	unsigned char m_bInUse : 1;
+	unsigned char m_bShortRange : 1;
+	unsigned char m_bFriendly : 1;
+	unsigned char m_bBlipRemain : 1;
+	unsigned char m_bBlipFade : 1;
+	unsigned char m_nCoordBlipAppearance : 2;
+	unsigned char m_nBlipDisplay : 2;
+	unsigned char m_nBlipType : 4;
 };
 
 

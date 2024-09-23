@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.25)
 
-project(TrilogySDK VERSION 0.1.2)
+project(TrilogySDK VERSION 0.1.3)
 
 add_library(TrilogySDK)
 

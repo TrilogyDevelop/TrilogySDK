@@ -37,6 +37,7 @@ target_sources(TrilogySDK
         CRGBA.h
         CRunningScript.h
         CSimpleTransform.h
+        CStreaming.h
         CTheScripts.h
         CTimer.h
         CVector.h
