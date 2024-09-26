@@ -1,6 +1,16 @@
 target_sources(TrilogySDK
     PRIVATE
+        CAEAmbienceTrackManager.h
+        CAEAudioEntity.h
+        CAEAudioHardware.h
+        CAEAudioUtility.h
+        CAEPedSpeechAudioEntity.h
+        CAESound.h
+        CAnimBlendAssociation.h
         CAnimBlendFrameData.h
+        CAnimBlendHierarchy.h
+        CAnimBlendNode.h
+        CAnimManager.h
         CAutomobile.h
         CCam.h
         CCamera.h
@@ -10,8 +20,10 @@ target_sources(TrilogySDK
         CCutsceneObject.h
         CEntity.h
         CEntityScanner.h
+        CFire.h
         CGame.h
         CHeli.h
+        CHud.h
         CHudColours.h
         CMakeLists.txt
         CMatrix.h
@@ -27,8 +39,10 @@ target_sources(TrilogySDK
         CPlaceable.h
         CPlayerData.h
         CPlayerInfo.h
+        CPlayerSkin.h
         CPool.h
         CPools.h
+        CPopulation.h
         CQuaternion.h
         CQueuedMode.h
         CRadar.h
@@ -38,8 +52,11 @@ target_sources(TrilogySDK
         CRunningScript.h
         CSimpleTransform.h
         CStreaming.h
+        CStreamingInfo.h
         CTheScripts.h
+        CTheZones.h
         CTimer.h
+        CTxdStore.h
         CVector.h
         CVector2D.h
         CVehicle.h
@@ -49,6 +66,9 @@ target_sources(TrilogySDK
         eCamMode.h
         eCopType.h
         eWeaponType.h
+        FxPrtMult_c.h
+        FxSystem_c.h
+        FxSystemBP_c.h
         memory.hpp
         ScriptCommandNames.h
         ScriptCommands.h

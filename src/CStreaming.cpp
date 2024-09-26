@@ -1,5 +1,8 @@
 #include "CStreaming.h"
 
+int *CStreaming::copModelByTown = reinterpret_cast<int*>(memory::GetAddr(0x419D6D0));
+CStreamingInfo *CStreaming::ms_aInfoForModel = reinterpret_cast<CStreamingInfo*>(memory::GetAddr(0x50D52B0));
+
 void CStreaming::LoadAllRequestedModels() {
     memory::GtaCall<void>(0x10FEB70);
 }

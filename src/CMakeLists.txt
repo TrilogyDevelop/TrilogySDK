@@ -1,6 +1,16 @@
 target_sources(TrilogySDK
     PRIVATE
+        CAEAmbienceTrackManager.cpp
+        CAEAudioEntity.cpp
+        CAEAudioHardware.cpp
+        CAEAudioUtility.cpp
+        CAEPedSpeechAudioEntity.cpp
+        CAESound.cpp
+        CAnimBlendAssociation.cpp
         CAnimBlendFrameData.cpp
+        CAnimBlendHierarchy.cpp
+        CAnimBlendNode.cpp
+        CAnimManager.cpp
         CAutomobile.cpp
         CCam.cpp
         CCamera.cpp
@@ -10,8 +20,10 @@ target_sources(TrilogySDK
         CCutsceneObject.cpp
         CEntity.cpp
         CEntityScanner.cpp
+        CFire.cpp
         CGame.cpp
         CHeli.cpp
+        CHud.cpp
         CHudColours.cpp
         CMakeLists.txt
         CMatrix.cpp
@@ -26,8 +38,10 @@ target_sources(TrilogySDK
         CPlaceable.cpp
         CPlayerData.cpp
         CPlayerInfo.cpp
+        CPlayerSkin.cpp
         CPool.cpp
         CPools.cpp
+        CPopulation.cpp
         CQuaternion.cpp
         CRadar.cpp
         CRect.cpp
@@ -36,13 +50,17 @@ target_sources(TrilogySDK
         CRunningScript.cpp
         CSimpleTransform.cpp
         CStreaming.cpp
+        CStreamingInfo.cpp
         CTheScripts.cpp
+        CTheZones.cpp
         CTimer.cpp
+        CTxdStore.cpp
         CVector.cpp
         CVector2D.cpp
         CVehicle.cpp
         CWeapon.cpp
         CWeather.cpp
         CWorld.cpp
+        FxSystem_c.cpp
         ScriptCommands.cpp
 )

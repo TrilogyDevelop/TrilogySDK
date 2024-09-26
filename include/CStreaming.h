@@ -1,9 +1,13 @@
 #pragma once
 #include "CVector.h"
 #include "memory.hpp"
+#include "CStreamingInfo.h"
 
 class CStreaming {
 public:
+    static int *copModelByTown; // static int copModelByTown[4]
+    static CStreamingInfo *ms_aInfoForModel;
+
     static void LoadAllRequestedModels();
     static void RequestModel(int nModel, int nFlags);
     static void LoadScene(CVector const* vPos);
