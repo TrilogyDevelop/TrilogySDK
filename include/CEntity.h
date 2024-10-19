@@ -38,5 +38,5 @@ class CEntity : public CPlaceable {
 	char m_nTypeStatus;
 	char field_6B[5];
 
-	char GetIsOnScreen();
+	bool GetIsOnScreen();
 };
