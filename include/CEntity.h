@@ -23,6 +23,7 @@ enum eEntityFlags
 };
 
 class CEntity : public CPlaceable {
+public:
 	struct AGTAActor* m_pUE4Actor;
 	char field_28[8];
 	eEntityFlags m_nFlags;
