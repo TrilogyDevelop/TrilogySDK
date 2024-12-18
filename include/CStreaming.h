@@ -1,6 +1,5 @@
 #pragma once
 #include "CVector.h"
-#include "memory.hpp"
 #include "CStreamingInfo.h"
 
 class CStreaming {
@@ -15,4 +14,7 @@ public:
     static void SetModelIsDeletable(int nModel);
     static void SetMissionDoesntRequireModel(int nModel);
     static void RemoveInappropriatePedModels();
+    static void Update();
+    static void RemoveModel(int nModel);
+
 };

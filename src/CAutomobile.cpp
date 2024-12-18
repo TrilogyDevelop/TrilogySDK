@@ -9,8 +9,22 @@
 #include "CAutomobile.h"
 #include "memory.hpp"
 
+CAutomobile::CAutomobile()
+{
+}
+
+CAutomobile::CAutomobile(int nModelIndex, unsigned char usageType, char bSetupSuspensionLines)
+{
+    memory::GtaCall<CAutomobile*>(0x11EAD60, this, nModelIndex, usageType, bSetupSuspensionLines);
+}
+
 void CAutomobile::UpdateWheelMatrix(int nodeIndex, int flags)
 {
     return memory::GtaCall<void>(0x11F8640, this, nodeIndex, flags);
+}
+
+void CAutomobile::PlaceOnRoadProperly()
+{
+    memory::GtaCall<void>(0x1202D50, this);
 }
 

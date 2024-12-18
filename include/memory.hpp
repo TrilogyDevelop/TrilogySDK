@@ -1,12 +1,11 @@
 #pragma once
 #include <Windows.h>
+#include <d3d11.h>
+#include <dxgi.h>
 #include <vector>
 #include <functional>
 #include <array>
-
-class ID3D11Device;
-class ID3D11DeviceContext;
-class IDXGISwapChain;
+#include "CRect.h"
 
 namespace memory
 {
@@ -84,11 +83,27 @@ namespace memory
 
 	static ID3D11DeviceContext* GetD3DeviceContext()
 	{
-		return *(ID3D11DeviceContext**)memory::GetAddressFromOffsets(GetGD3D11RHI(), {0x158});
+		return *(ID3D11DeviceContext**)memory::GetAddressFromOffsets(GetGD3D11RHI(), { 0x158 });
 	}
 
 	static IDXGISwapChain* GetDXGISwapChain()
 	{
 		return *(IDXGISwapChain**)memory::GetAddr(0x051BC748);
+	}
+
+	static void* GetGameterface()
+	{
+		return *(void**)memory::GetAddr(0x556BB88);
+	}
+
+	static CRect GetWindowSize()
+	{
+		CRect rRect;
+		rRect.left = 0;
+		rRect.top = 0;
+		rRect.right = memory::Read<uint32_t>(GetAddr(0x5156988));
+		rRect.bottom = memory::Read<uint32_t>(GetAddr(0x515698C));
+
+		return rRect;
 	}
 }

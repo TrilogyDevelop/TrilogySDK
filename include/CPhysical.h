@@ -44,6 +44,7 @@ public:
 	char field_190[8];
 	struct CRealTimeShadow* m_pShadowData;
 
+	CPhysical();
 	void AddCollisionRecord(CEntity* collidedEntity);
 	void AddToMovingList();
 	bool ApplyCollision(CEntity* entity, CColPoint& colPoint, float& arg2);

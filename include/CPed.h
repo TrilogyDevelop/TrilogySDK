@@ -148,7 +148,7 @@ public:
 	void GrantAmmo(eWeaponType nWeapon, int nAmmo);
 	void SetAmmo(eWeaponType nWeapon, int nAmmo);
 	char GetWeaponSkill(eWeaponType nWeapon);
-	void GetBonePosition(CVector& out, bool bDynamic, unsigned int nBoneId);
+	void GetBonePosition(CVector* out, bool bDynamic, unsigned int nBoneId);
 	void SetPedState(ePedState nState);
 	bool IsPlayer();
 	bool IsAlive();

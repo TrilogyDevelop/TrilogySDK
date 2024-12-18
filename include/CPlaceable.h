@@ -10,8 +10,10 @@ public:
 	CSimpleTransform m_SimpleCoors;
 	CMatrixLink* m_pMatrix;
 
+	CPlaceable();
 	void SetPosition(CVector const&);
 	void SetPosition(float x, float y, float z);
+	void SetOrientation(float x, float y, float z);
 	CVector& GetPosition();
 	void SetHeading(float fAngle);
 	float GetHeading();

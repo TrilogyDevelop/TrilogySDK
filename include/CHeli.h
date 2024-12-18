@@ -80,4 +80,6 @@ public:
     static unsigned int& NumberOfSearchLights;
     static bool& bHeliControlsCheat;
     static tHeliLight* HeliSearchLights;
+
+    CHeli(int nModelIndex, unsigned char nUsageType);
 };

@@ -39,5 +39,11 @@ public:
 	char m_nTypeStatus;
 	char field_6B[5];
 
+	CEntity();
+
 	bool GetIsOnScreen();
+	//vtbl
+	void SetModelIndex_vtbl(unsigned int nModelIndex);
+	void SetModelIndexNoCreate(unsigned int nModelIndex);
+	void DeleteRwObject();
 };

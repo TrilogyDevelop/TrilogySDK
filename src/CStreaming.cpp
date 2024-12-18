@@ -1,4 +1,5 @@
 #include "CStreaming.h"
+#include "memory.hpp"
 
 int *CStreaming::copModelByTown = reinterpret_cast<int*>(memory::GetAddr(0x419D6D0));
 CStreamingInfo *CStreaming::ms_aInfoForModel = reinterpret_cast<CStreamingInfo*>(memory::GetAddr(0x50D52B0));
@@ -29,4 +30,12 @@ void CStreaming::SetMissionDoesntRequireModel(int nModel) {
 
 void CStreaming::RemoveInappropriatePedModels() {
     memory::GtaCall<void>(0x1102430);
+}
+
+void CStreaming::Update() {
+    memory::GtaCall<void>(0x10FB600);
+}
+
+void CStreaming::RemoveModel(int nModel) {
+    memory::GtaCall<void>(0x10FD3D0, nModel);
 }

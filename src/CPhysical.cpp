@@ -1,6 +1,11 @@
 #include "CPhysical.h"
 #include "memory.hpp"
 
+CPhysical::CPhysical()
+{
+
+}
+
 void CPhysical::AddCollisionRecord(CEntity* collidedEntity) {
 	memory::GtaCall<void>(0xFD4D00, this, collidedEntity);
 }

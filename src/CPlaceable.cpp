@@ -2,6 +2,11 @@
 #include "CPlaceable.h"
 #include <math.h>
 
+CPlaceable::CPlaceable()
+{
+
+}
+
 void CPlaceable::SetPosition(CVector const& vPos) {
 	if (this->m_pMatrix) {
 		this->m_pMatrix->pos.x = vPos.x;
@@ -29,6 +34,11 @@ void CPlaceable::SetPosition(float x, float y, float z) {
 		this->m_SimpleCoors.m_vPosn.y = y;
 		this->m_SimpleCoors.m_vPosn.z = z;
 	}
+}
+
+void CPlaceable::SetOrientation(float x, float y, float z)
+{
+	memory::GtaCall<void>(0xEE8C30, this, x, y, z);
 }
 
 CVector& CPlaceable::GetPosition() {

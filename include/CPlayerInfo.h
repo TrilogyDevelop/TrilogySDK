@@ -1,6 +1,5 @@
 #pragma once
 #include "CPed.h"
-#include "memory.hpp"
 
 class CPlayerInfo {
 public:

@@ -41,7 +41,7 @@ char CPed::GetWeaponSkill(eWeaponType nWeapon) {
 	return memory::GtaCall<char>(0x10A0750, this, nWeapon);
 }
 
-void CPed::GetBonePosition(CVector& out, bool bDynamic, unsigned int nBoneId) {
+void CPed::GetBonePosition(CVector* out, bool bDynamic, unsigned int nBoneId) {
 	memory::GtaCall<void>(0x10A01B0, this, out, bDynamic, nBoneId);
 }
 
